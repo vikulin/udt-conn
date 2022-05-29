@@ -50,12 +50,12 @@ func Dial(raddr string) (net.Conn, error) {
 
 // DialAddrContext establishes a new UDT connection to a server using the provided context.
 // See DialAddr for details.
-func DialContext(ctx context.Context, raddr string,) (net.Conn, error) {
+func DialContext(ctx context.Context, network, raddr string,) (net.Conn, error) {
 	addr, err := net.ResolveUDPAddr("udp", raddr)
 	if err != nil {
 		return nil, err
 	}
-	uConn, err := udt.DialUDTContext(ctx, "udp", "0.0.0.0:0", addr, true)
+	uConn, err := udt.DialUDTContext(ctx, network, "0.0.0.0:0", addr, true)
 	if err != nil {
 		return nil, err
 	}
