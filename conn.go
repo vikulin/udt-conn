@@ -4,18 +4,11 @@ import (
 	"net"
 	"time"
 
-	udt "github.com/vikulin/go-udt"
+	udt "github.com/vikulin/go-udt/udt"
 )
 
 type conn struct {
-	udtConn udt.udtSocket
-}
-
-func newConn(udtConn udt.udtSocket) (*conn, error) {
-	
-	return &conn{
-		udtConn:    udtConn,
-	}, nil
+	udtConn udt.Connection
 }
 
 func (c *conn) Read(b []byte) (int, error) {

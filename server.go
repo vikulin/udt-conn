@@ -1,14 +1,13 @@
-package quicconn
+package udtconn
 
 import (
-	"context"
 	"net"
 
-	udt "github.com/vikulin/go-udt"
+	udt "github.com/vikulin/go-udt/udt"
 )
 
 type server struct {
-	udtServer udt.listener
+	udtServer udt.Listener
 }
 
 var _ net.Listener = &server{}

@@ -2,14 +2,8 @@ package main
 
 import (
 	"bufio"
-	"crypto/rand"
-	"crypto/rsa"
-	"crypto/tls"
-	"crypto/x509"
-	"encoding/pem"
 	"flag"
 	"fmt"
-	"math/big"
 	"strings"
 	"time"
 

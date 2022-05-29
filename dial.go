@@ -1,11 +1,10 @@
-package quicconn
+package udtconn
 
 import (
 	"context"
-	"crypto/tls"
 	"net"
 
-	udt "github.com/vikulin/go-udt"
+	udt "github.com/vikulin/go-udt/udt"
 )
 
 
@@ -40,7 +39,7 @@ func Dial(raddr string) (net.Conn, error) {
 
 // DialAddrContext establishes a new UDT connection to a server using the provided context.
 // See DialAddr for details.
-func DialContext(ctx context.Context, addr string,) (net.Conn, error) {
+func DialContext(ctx context.Context, raddr string,) (net.Conn, error) {
 	addr, err := net.ResolveUDPAddr("udp", raddr)
 	if err != nil {
 		return nil, err
