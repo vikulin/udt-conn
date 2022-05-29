@@ -42,6 +42,11 @@ func main() {
 				// echo back
 				newmessage := strings.ToUpper(message)
 				conn.Write([]byte(newmessage + "\n"))
+				message, err = bufio.NewReader(conn).ReadString('\n')
+				if err != nil {
+					panic(err)
+				}
+				fmt.Print("Message from client: ", string(message))
 			}
 		}()
 	}
@@ -63,6 +68,7 @@ func main() {
 				panic(err)
 			}
 			fmt.Print("Message from server: " + answer)
+			conn.Write([]byte(answer + "\n"))
 		}()
 	}
 
