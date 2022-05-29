@@ -2,5 +2,7 @@ github.com/furstenheim/nth_element v0.0.0-20190419153334-6ae3dd61145d h1:ph6fZ1/
 github.com/furstenheim/nth_element v0.0.0-20190419153334-6ae3dd61145d/go.mod h1:wiFjePPTcPnPl5zlyrjHTXRPsq8z+1m8I0pCXYMoGlg=
 github.com/vikulin/go-udt v0.0.0-20220529084359-dd6a8672cc29 h1:pRc+tMrCNxKypDtb69NUSm6H0cwp3scYogwLH8P3bMM=
 github.com/vikulin/go-udt v0.0.0-20220529084359-dd6a8672cc29/go.mod h1:UiGXrPeSjRLoMAMqHqGQomggnlnh9PpAS1maaNmGWpo=
+github.com/vikulin/go-udt v0.0.0-20220529103753-73104e9eb896 h1:+xyOMyHG3xG9cUj+wFfKErsH+o/H7C9d24gaa16P1XE=
+github.com/vikulin/go-udt v0.0.0-20220529103753-73104e9eb896/go.mod h1:UiGXrPeSjRLoMAMqHqGQomggnlnh9PpAS1maaNmGWpo=
 golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a h1:dGzPydgVsqGcTRVwiLJ1jVbufYwmzD3LfVPLKsKg+0k=
 golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
