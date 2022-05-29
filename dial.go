@@ -19,6 +19,17 @@ func Listen(network, laddr string) (net.Listener, error) {
 	}, nil
 }
 
+// Listen creates a UDT listener on the given network interface
+func ListenContext(ctx context.Context, network, laddr string) (net.Listener, error) {
+	ln, err := udt.ListenUDTContext(ctx, network, laddr)
+	if err != nil {
+		return nil, err
+	}
+	return &server{
+		udtServer: ln,
+	}, nil
+}
+
 // Dial creates a new UDT connection
 // it returns once the connection is established and secured with forward-secure keys
 func Dial(raddr string) (net.Conn, error) {
