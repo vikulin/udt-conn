@@ -8,5 +8,7 @@ github.com/vikulin/go-udt v0.0.0-20220529173347-d3503b4c7f90 h1:rYDbq9PwXRbFEpl0
 github.com/vikulin/go-udt v0.0.0-20220529173347-d3503b4c7f90/go.mod h1:UiGXrPeSjRLoMAMqHqGQomggnlnh9PpAS1maaNmGWpo=
 github.com/vikulin/go-udt v0.0.0-20220601163422-80849e6f9be3 h1:IFSXVoyFKyHQhM5HB5eaRoRQgxOQfXfh0CduBfc3u0c=
 github.com/vikulin/go-udt v0.0.0-20220601163422-80849e6f9be3/go.mod h1:UiGXrPeSjRLoMAMqHqGQomggnlnh9PpAS1maaNmGWpo=
+github.com/vikulin/go-udt v0.0.0-20220601163943-774f3d27993d h1:J+G0cuELIEirEkA+DXq+/jkBDEW+YBkr5I43uVvgSkk=
+github.com/vikulin/go-udt v0.0.0-20220601163943-774f3d27993d/go.mod h1:UiGXrPeSjRLoMAMqHqGQomggnlnh9PpAS1maaNmGWpo=
 golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a h1:dGzPydgVsqGcTRVwiLJ1jVbufYwmzD3LfVPLKsKg+0k=
 golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
